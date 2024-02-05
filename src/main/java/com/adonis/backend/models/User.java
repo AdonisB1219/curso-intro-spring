@@ -31,8 +31,7 @@ public class User {
 	private String password;
 	@NotEmpty
 	private String image;
-	@OneToMany
-	private Set<Post> posts;
+
 	
 	public String getName() {
 		return name;
@@ -64,12 +63,7 @@ public class User {
 	public void setImage(String image) {
 		this.image = image;
 	}
-	public Set<Post> getPosts() {
-		return posts;
-	}
-	public void setPosts(Set<Post> posts) {
-		this.posts = posts;
-	}
+
 	public Long getId() {
 		return id;
 	}
